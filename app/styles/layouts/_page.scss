@@ -4,9 +4,7 @@
   min-height: $page-height;
   display: block;
   margin: 0 auto;
-  border-top: 10px solid $primary-color;
   padding: 36px 22px 30px 34px;
-  @include shadow();
   @include clearfix();
 }
 
@@ -15,11 +13,20 @@
   width: $aside-width;
   margin-right: $aside-margin;
   word-wrap: break-word;
+  padding: 20px;
 }
 
 .right-column {
   width: auto;
   overflow: hidden;
+  padding: 10px 20px 20px 20px;
+}
+
+.accent-container {
+  background-color: $primary-color;
+  color: $white;
+  margin-left: -20px;
+  margin-top: -20px;
 }
 
 .item {
@@ -29,3 +36,24 @@
     margin-bottom: 0;
   }
 }
+
+
+//$background:	#1A2026
+//$foreground:	#FFFFFF
+//$cursorColor:	#FFFFFF
+//$color0:	#242D35
+//$color1:	#FB6396
+//$color2:	#94CF95
+//$color3:	#F692B2
+//$color4:	#6EC1D6
+//$color5:	#CD84C8
+//$color6:	#7FE4D2
+//$color7:	#FFFFFF
+//$color8:	#526170
+//$color9:	#F92D72
+//$color10:	#6CCB6E
+//$color11:	#F26190
+//$color12:	#4CB9D6
+//$color13:	#C269BC
+//$color14:	#58D6BF
+//$color15:	#F4F5F2

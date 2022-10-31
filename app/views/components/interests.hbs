@@ -2,19 +2,12 @@
 <div class="container interests-container">
   {{> title value="Interests"}}
 
-  {{#each resume.interests}}
-    <section class="item">
-      {{#if name}}
-        <h4 class="bold">{{name}}</h4>
-      {{/if}}
-      {{#if keywords.length}}
-        <ul class="minimal">
-          {{#each keywords}}
-              <li>{{.}}</li>
-          {{/each}}
-        </ul>
-      {{/if}}
-    </section>
-  {{/each}}
+  <ul class="minimal">
+    {{#each resume.interests}}
+        {{#if name}}
+          <li><h6>{{name}}</h6></li>
+        {{/if}}
+    {{/each}}
+  </ul>
 </div>
 {{/if}}

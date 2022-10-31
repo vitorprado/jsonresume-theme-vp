@@ -1,5 +1,6 @@
 /*----- Colors -----*/
 
+$white                  : #fff;
 $gray-darkest           : #333;
 $gray-darker            : #666;
 $gray-dark              : #999;
@@ -10,23 +11,24 @@ $gray-lightest          : #f8f8f8;
 
 $slate-gray             : #39424B;
 $slate-green            : #56817A;
+$dark-color             : #242D35;
 
-$primary-color          : $slate-green;
+$primary-color          : $dark-color;
 $secondary-color        : $slate-gray;
 
 $link-color             : #2895F1;
 
 /*----- Fonts -----*/
 
-$primary-font               : 'Lato', Helvetica, Arial, sans-serif;
-$secondary-font             : 'Josefin Sans', Helvetica, Arial, sans-serif;
+$primary-font               : 'Open Sans', Helvetica, Arial, sans-serif;
+$secondary-font             : 'Exo', Helvetica, Arial, sans-serif;
 
 /*----- Dimensions and sizes -----*/
 
 $print-width            : 21cm;
 $print-height           : 29.7cm;
-$page-width             : 612px;
-$page-height            : 792px;
+$page-width             : 794px;
+$page-height            : 1123px;
 
 $mobile-width           : 435px;
 $tablet-width           : 768px;
@@ -36,6 +38,6 @@ $retina-width           : 1920px;
 
 $font-unit              : 4px;
 $profile-pic-size       : 52px;
-$aside-width            : 160px;
+$aside-width            : 250px;
 $aside-margin           : 20px;
 $pad-unit               : 5px;

@@ -1,12 +1,38 @@
 {{#resume.basics}}
 <header class="resume-header clearfix">
-  <div class="profile-header pull-left">
+  <div class="left-column accent-container">
+    <div class="profile-pic">
+      {{#if picture}}
+        <img src="{{picture}}" alt="profile-pic">
+      {{/if}}
+    </div>
     <h1>{{name}}</h1>
     <h2>{{label}}</h2>
-  </div>
-  <div class="profile-pic pull-right">
-    {{#if picture}}
-      <img src="{{picture}}" alt="profile-pic">
+    <!-- add spacing -->
+    <div class="keyline"></div>
+
+    {{#if location}}
+      {{#location}}
+        {{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
+      {{/location}}
+    {{/if}}
+
+    {{#if email}}
+      {{> info-tag text=this.email icon="fa-envelope-o"}}
+    {{/if}}
+
+    {{#if phone}}
+      {{> info-tag text=this.phone icon="fa-mobile"}}
+    {{/if}}
+
+    {{#if website}}
+      {{> info-tag text=this.website icon="fa-desktop" url=this.website}}
+    {{/if}}
+
+    {{#if profiles}}
+      {{#each profiles}}
+        {{> social}}
+      {{/each}}
     {{/if}}
   </div>
 </header>
