@@ -61,16 +61,5 @@ function render(resume) {
 }
 
 module.exports = {
-  render: render,
-  pdfRenderOptions: {
-    format: 'A4',
-    mediaType: 'print',
-    pdfViewport: { width: 794, height: 1123 },
-    margin: {
-      top: '0',
-      bottom: '0',
-      left: '0',
-      right: '0',
-    },
-  },
+  render: render
 };
