@@ -61,9 +61,5 @@ function render(resume) {
 }
 
 module.exports = {
-  render: render,
-  pdfRenderOptions: {
-    mediaType: 'print',
-    pdfViewport: { width: '8.5in', height: '11.7in' }
-  }
+  render: render
 };
