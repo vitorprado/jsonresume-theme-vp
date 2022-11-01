@@ -8,6 +8,8 @@ $gray                   : #ccc;
 $gray-light             : #ddd;
 $gray-lighter           : #eee;
 $gray-lightest          : #f8f8f8;
+$profile-color          : #C359BE;
+$profile-color-dark     : #8F428B;
 
 $slate-gray             : #39424B;
 $slate-green            : #56817A;
@@ -15,8 +17,10 @@ $dark-color             : #242D35;
 
 $primary-color          : $dark-color;
 $secondary-color        : $slate-gray;
+$accent-color           : $profile-color;
+$accent-color-dark      : $profile-color-dark;
 
-$link-color             : #2895F1;
+$link-color             : $accent-color;
 
 /*----- Fonts -----*/
 
